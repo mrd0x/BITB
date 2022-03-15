@@ -1,5 +1,5 @@
 # BITB
-Browser In The Browser (BITB) Templates
+Browser templates for Browser In The Browser (BITB) attack
 
 # Usage
 
