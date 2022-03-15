@@ -12,7 +12,11 @@ Each folder has a `index.html` file which has 4 variables that must be modified:
 
 Furthermore, if you're using a Windows template you should update the `logo.svg` which is the icon of the website you're masquerading as. The default logo is Microsoft.
 
-# Final Thought
+# Demo
+
+![Demo](https://github.com/mrd0x/BITB/blob/main/demo.gif)
+
+# Final Thoughts
 
 To get the most out of this you should determine the OS from the user agent and the color preference and display the appropriate template.
 
