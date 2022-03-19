@@ -12,6 +12,10 @@ Each folder has a `index.html` file which has 4 variables that must be modified:
 
 Furthermore, if you're using a Windows template you should update the `logo.svg` which is the icon of the website you're masquerading as. The default logo is Microsoft.
 
+# Windows-DarkMode-Delay
+
+The Windows-DarkMode-Delay folder makes use of jQuery's fadeIn() function to add a slight delay to the pop-up window as it appears. This is only one way of making the Window appear in a delayed fashion, there's various other ways to do the same.
+
 # Final Thought
 
 To get the most out of this you should determine the OS from the user agent and the color preference and display the appropriate template.
