@@ -28,3 +28,7 @@ The Windows-DarkMode-Delay folder makes use of jQuery's fadeIn() function to add
 To get the most out of this you should determine the OS from the user agent and the color preference and display the appropriate template.
 
 To find out if you should use dark or light templates check out: https://stackoverflow.com/questions/50840168/how-to-detect-if-the-os-is-in-dark-mode-in-browsers
+
+# Disclaimer
+
+Usage of these templates for attacking targets without prior consent is illegal. It's the end user's responsibility to obey all applicable laws. The developer is not responsible for any misuse of these templates.
