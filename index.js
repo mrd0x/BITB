@@ -1,15 +1,24 @@
 const express = require('express');
+var useragent = require('useragent');
 
 const app = express();
 
+
 // Create MiddleWare Fuction That Checks User Agent
 
-app.use('/request-type', (req, res, next) => {
-    console.log('Request type: ', req.method);
+app.use('/', (req, res, next) => {
+
+  ua = useragent.is(req.headers['user-agent'])// true
+  if (ua.chrome)
+  {
+    app.use(express.static('public/Windows-Chrome-LightMode'));
+  }
     next();
   });
 
 app.get('/', (req, res) => {
+  
+  
   res.send('Successful response.');
 });
 
