@@ -2,6 +2,8 @@ var minimize = document.getElementById("minimize");
 var square = document.getElementById("square");
 var exit = document.getElementById("exit");
 var titleBar = document.getElementById("title-bar");
+var urlBar = document.getElementById("url-bar")
+var open = true
 
 ////////////////// Hover listeners //////////////////
 minimize.addEventListener('mouseover', function handleMouseOver() {
@@ -41,6 +43,27 @@ titleBar.addEventListener('mouseover', function handleMouseOver() {
 titleBar.addEventListener('mouseout', function handleMouseOver() {
   titleBar.style.cursor = 'default';
 });
+
+urlBar.addEventListener('click', function handleMouseClick(){
+    if(open == false) {
+        $("#domain-name").css("background-color", "#83AFE3")
+        $("#domain-name").css("-webkit-tap-highlight-color", "transparent")
+        $("#domain-path").css("background-color", "#83AFE3")
+        $("#domain-path").css("-webkit-tap-highlight-color", "transparent")
+        urlBar.style.cursor = 'text'
+        open = true
+    } else {
+        urlBar.style.cursor = 'default'
+        $("#domain-name").css("background-color", "unset")
+        $("#domain-path").css("background-color", "unset")
+        open = false
+    }
+   
+})
+
+urlBar.addEventListener('mouseover', function handleMouseOverUrl() {
+    urlBar.style.cursor = 'text'
+})
 
 
 //////////////// Make window draggable start ////////////////
