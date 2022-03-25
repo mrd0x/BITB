@@ -13,12 +13,18 @@ var app = express();
 // view engine setup
 app.use('/', (req, res, next) => {
 
-  ua = useragent.is(req.headers['user-agent'])// true
-  if (ua.chrome)
+  ua = useragent.parse(req.headers['user-agent'])// true
+  console.log(ua.os)
+  if (ua.os.family==='Windows')
   {
-    app.set('views', path.join(__dirname, 'views/MacOS-Chrome-DarkMode'));
+    console.log(ua.os)
+    app.set('views', path.join(__dirname, 'views/Windows-DarkMode-Delay'));
   }
-  console.log("hey")
+  else {
+    app.set('views', path.join(__dirname, 'views/Windows-DarkMode-Delay'));
+    
+  }
+  
     next();
   });
 
@@ -30,7 +36,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public/Windows-DarkMode-Delay')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -48,7 +54,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('..\\error');
 });
 
 module.exports = app;
