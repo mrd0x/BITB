@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var useragent = require('useragent');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -10,7 +11,19 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.use('/', (req, res, next) => {
+
+  ua = useragent.is(req.headers['user-agent'])// true
+  if (ua.chrome)
+  {
+    app.set('views', path.join(__dirname, 'views/MacOS-Chrome-DarkMode'));
+  }
+  console.log("hey")
+    next();
+  });
+
+
+
 app.set('view engine', 'hbs');
 
 app.use(logger('dev'));

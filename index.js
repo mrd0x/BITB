@@ -1,7 +1,12 @@
 const express = require('express');
+const { cookie } = require('express/lib/response');
 var useragent = require('useragent');
 
 const app = express();
+
+
+app.use(cookieParser());
+app.use(express.json());
 
 
 // Create MiddleWare Fuction That Checks User Agent
