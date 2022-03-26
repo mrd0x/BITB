@@ -33,6 +33,8 @@ python3 main.py
 
 ```
 
+Open the browser and go to http://localhost:5000/test and you see a live test page. 
+
 Furthermore, if you're using a Windows template you should update the `logo.svg` which is the icon of the website you're masquerading as. The default logo is Microsoft.
 # Integration
 
