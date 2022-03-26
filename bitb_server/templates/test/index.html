@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <title>BITB Server [TEST]</title>
+    <style>
+        .btn {
+            display: inline-block;
+            background-color: #f44336;
+            color: #FFFFFF;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin-left: 20px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <h1>For Educational Purposes Only</h1>
+    <a href="#" id="test-link" class="btn">TEST</a>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<script>
+    
+    // Open modal in AJAX callback
+    $('#test-link').click(function(event) {
+        event.preventDefault();
+        this.blur(); // Manually remove focus from clicked link.
+        $.get('/', function(html) {
+            $(html).appendTo('body').modal();
+        });
+    });
+</script>
+</html>

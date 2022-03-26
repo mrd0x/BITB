@@ -1,27 +1,47 @@
-# BITB
-Browser templates for Browser In The Browser (BITB) attack.
+# BITB Server
+
+Flask application for Browser In The Browser (BITB) attack.
+
+It's a Fork of https://github.com/mrd0x/BITB
 
 More information: https://mrd0x.com/browser-in-the-browser-phishing-attack/ 
 
+
+# Requirements
+pip3 install -r requirements.txt
+
 # Usage
 
-Each folder has a `index.html` file which has 4 variables that must be modified:
+phishing.ini file has 4 variables that must be modified:
 
-* **XX-TITLE-XX** - The title that shows up for the page (e.g. Sign in to your account now)
-* **XX-DOMAIN-NAME-XX** - Domain name you're masquerading as. (e.g. gmail.com)
-* **XX-DOMAIN-PATH-XX** - Domain path (e.g. /auth/google/login)
-* **XX-PHISHING-LINK-XX** - Phishing link which will be embedded into the iFrame (e.g. https://example.com)
+* **PHISHING_TITLE** - The title that shows up for the page (e.g. Sign in to your account now)
+* **DOMAIN_NAME** - Domain name you're masquerading as. (e.g. gmail.com)
+* **DOMAIN_PATH** - Domain path (e.g. /auth/google/login)
+* **BITB_TEMPLATE** * - Look alike browser template name (e.g. Windows-DarkMode-Delay)
+
+DOMAIN_NAME = https://gmail.com
+DOMAIN_PATH = /login
+PHISHING_TITLE = Gmail
+BITB_TEMPLATE = Windows-DarkMode-Delay
+
+# Run the Flask app
+
+```bash
+
+cd bitb_server
+python3 main.py
+
+```
+
+Open the browser and go to http://localhost:5000/test and you see a live test page. 
 
 Furthermore, if you're using a Windows template you should update the `logo.svg` which is the icon of the website you're masquerading as. The default logo is Microsoft.
+# Integration
 
-
+You can use this with https://getgophish.com/ leverage your campaings
 # Windows-DarkMode-Delay
 
 The Windows-DarkMode-Delay folder makes use of jQuery's fadeIn() function to add a slight delay to the pop-up window as it appears. This is only one way of making the Window appear in a delayed fashion, there's various other ways to do the same.
-
-# Demo
-
-![Demo](https://github.com/mrd0x/BITB/blob/main/demo.gif)
 
 # Detecting Color Preference
 
