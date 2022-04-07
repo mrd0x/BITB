@@ -1,5 +1,5 @@
-# BITB
-Browser templates for Browser In The Browser (BITB) attack.
+# BITB PHISHING
+Browser templates for Browser In The Browser (BITB) attack. Serves diffrent frontend depending on the user agent . 
 
 More information: https://mrd0x.com/browser-in-the-browser-phishing-attack/ 
 
