@@ -14,7 +14,7 @@ var app = express();
 app.use('/', (req, res, next) => {
 
   ua = useragent.parse(req.headers['user-agent'])// true
-  console.log(ua.os)
+ // console.log(ua.os)
   if (ua.os.family==='Windows')
   {
     console.log(ua.os)

