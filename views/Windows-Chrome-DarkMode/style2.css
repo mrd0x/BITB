@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background-color: gray;
+    font-family: Helvetica;
+}
+.everything{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h1{
+    font-size: 25px;
+    margin-left: -30px;
+}
+p{
+    font-size: 12px;
+    margin-left: 3px;
+    font-weight: bold;
+}
+img{
+    height: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    height: 470px;
+    background-color: white;
+    border-radius: 10px;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 235px;
+    margin: 10px 0;
+    border-radius: 70px;
+    border: solid 1px grey;
+    background-color: white;
+}
+input{
+    width: 230px;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+.hr-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+.hr-text{
+    margin: 0px 5px;
+}
+hr{
+    width: 100px;
+}
+.next-button{
+    background-color: black;
+    color: white;
+}
+.twitter{
+    margin: 5px 0px 15px 0px;
+}
+h1{
+    margin-bottom: 10px;
+}
+.fp{
+    margin-bottom: 40px;
+}
+.footer-text{
+    margin-left: -60px;
+    font-weight: lighter; 
+}
