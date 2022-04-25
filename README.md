@@ -35,6 +35,10 @@ To find out if you should use dark or light templates check out: https://stackov
 
 One way of detecting BITB is by attempting to drag the window to the edge of the browser. If the window cannot escape the browser then it's not a real window. 
 
+## Changing Browser Size
+
+Another way to detect BITB is to try to resize your browser, the original pop-up window will not be affected, but it will effect to the fake one, because the css will adjust the size of the browser
+
 ## Browser Extension
 
 @odacavo released a great browser extension that can detect and warn users about embedded iframes. It's available here: https://github.com/odacavo/enhanced-iframe-protection
