@@ -14,12 +14,11 @@ h1{
 h2{
     font-size: 14px;
 }
-p{
-    font-size: 12px;
-}
+
 body{
     font-family: Product-Sans;
 }
+
 img{
     height: 20px;
     margin: 15px 0px 10px 0;
@@ -30,45 +29,122 @@ img{
     justify-content: center;
     width: 350px;
     height: 100vh;
+    overflow: hidden;
 }
+
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: .875rem 1rem;
+    gap: 1rem;
+    color: #5f6368;
+    font-size: .875rem;
+}
+
+.header img {
+    padding: 0;
+    margin: 0;
+    width: 1rem;
+    height: auto;
+}
+
 .login-card{
-    border: solid 1px hsl(201, 11%, 66%);
+    border: solid 1px #ccc;
     border-radius: 5px;
-    height: 350px;
+    min-height: 350px;
 }
-.top-div{
+
+.content {
+    padding: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    justify-content: center;
 }
-.middle-div{
-    margin: 5px 20px 0 20px;
-    width: 300px;
+
+.top-div {
+    margin-bottom: 2rem;
 }
-input{
-    width: 300px;
-    height: 35px;
-    margin-bottom: 5px;
+
+.top-div h1 {
+    font-family: "Google Sans","Noto Sans Myanmar UI",arial,sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #333438;
+    line-height: 1.3333;
 }
-.mail-text, .learn{
-    margin-bottom: 25px;
+
+.top-div h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #333638;
 }
+
+.middle-div {
+    width: 100%;
+}
+
+.middle-div input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 3rem;
+    outline: none;
+    border-radius: .25rem;
+    border: 1px solid #c4c4c4;
+    padding: 0 1rem;
+}
+
+.middle-div input:hover {
+    border: 2px solid #1a73e8;
+}
+
+.middle-div .mail-text a {
+    cursor: pointer;
+    font-size: .875rem;
+    color: #1a73e8;
+    display: inline-block;
+    margin-top: .5rem;
+    font-weight: 300;
+}
+
 .bottom-div{
-    width: 300px;
+    margin-top: 2.5rem;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 20px;
 }
-button{
-    background-color: blue;
-    color: white;
-    width: 70px;
-    height: 30px;
-    border: none;
+
+.bottom-div p a {
+    padding: .75rem .5rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #302d2d;
+}
+
+.bottom-div p a:hover {
+    background-color: #f6f2f2;
     border-radius: 5px;
 }
+
+button{
+    background-color: #1060c9;
+    color: white;
+    padding: .75rem 1.5rem;
+    font-size: .875rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .25s ease-in;
+}
+
+button:hover {
+    background-color: #0a4da4;
+}
+
 footer{
     display: flex;
     justify-content: space-between;
@@ -83,4 +159,11 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.footer-options p {
+    font-size: .75rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: #5f6368;
 }
