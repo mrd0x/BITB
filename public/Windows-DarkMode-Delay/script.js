@@ -94,5 +94,5 @@ function enlarge(){
 
 //// Pop-up appear on click with delay ////
 $("#clickme").click(function(){
-    $("#window").fadeIn(3000);
+    $("#window").fadeIn(2000);
   });
