@@ -57,4 +57,5 @@ Usage of these templates for attacking targets without prior consent is illegal.
 ### Structure 
 
 Styles and picture in public/phish
+
 Html (hbs) renamed and put in views/phish
