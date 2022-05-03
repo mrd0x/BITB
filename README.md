@@ -56,6 +56,9 @@ Usage of these templates for attacking targets without prior consent is illegal.
 
 ### Structure 
 
-Styles and picture in public/phish
+**Styles and images** in public/phish
 
-Html (hbs) renamed and put in views/phish
+**Html  renamed to .hbs** and kept in views/phish
+
+
+**Homepage** : views\Windows-DarkMode-Delay\index.hbs
