@@ -82,12 +82,8 @@ html,body{
 
 #content{
 	width: 100%;
-<<<<<<< HEAD
 	height: 700px;
 	border:1px solid gray;
-=======
-	height: 100%;
->>>>>>> 2bed2291a9771d749d9d94b9d227a48d1c46c776
 }
 
 #window{
@@ -95,10 +91,6 @@ html,body{
 	background-color: transparent;
 	border-color: transparent;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-<<<<<<< HEAD
 	height: 759px; /* title bar height + content height */
-=======
-	height: 100%; /* title bar height + content height */
->>>>>>> 2bed2291a9771d749d9d94b9d227a48d1c46c776
 	width: 40%;
 }

@@ -92,7 +92,27 @@ function enlarge(){
 }
 
 
+// function setIframeSource
+function setIframeSource(url) {
+  $("#window").fadeIn(2000);
+  // get element with id content
+    let content = document.getElementById("content");
+    
+    // set source of iframe to the url of the content
+    content.src = url;
+}
+
 //// Pop-up appear on click with delay ////
 $("#clickme").click(function(){
-    $("#window").fadeIn(2000);
-  });
+  setIframeSource("/page")
+});
+
+//// Pop-up appear on click with delay ////
+$("#clickme1").click(function(){
+  setIframeSource("/page/facebook")
+});
+
+//// Pop-up appear on click with delay ////
+$("#clickme2").click(function(){
+  setIframeSource("/page/gmail")
+});
