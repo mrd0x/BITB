@@ -44,13 +44,27 @@ button{
     border-radius: 70px;
     border: solid 1px grey;
     background-color: white;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+button:hover {
+    background-color: #f7f7f7;
+}
+
 input{
     width: 230px;
     height: 35px;
     margin-bottom: 10px;
     padding-left: 5px;
+    outline: none;
 }
+
+input:hover, input:focus, input:active {
+    border: solid 2px #1CA0F1;
+    outline: 2px;
+}
+
 .hr-box{
     display: flex;
     align-items: center;
@@ -66,8 +80,15 @@ hr{
     background-color: black;
     color: white;
 }
+
+.next-button:hover {
+    background-color: black;
+
+    opacity: .8;
+}
+
 .twitter{
-    margin: 5px 0px 15px 0px;
+    margin: 1rem 0px 15px 0px;
 }
 h1{
     margin-bottom: 10px;

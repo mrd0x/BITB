@@ -56,6 +56,11 @@ input{
     font-size: 23px;
     font-weight: bold;
 }
+
+.forget-pass{
+    color: rgb(24,119,242);
+}
+
 .small-text{
     text-align: center;
     color: rgb(173,234,255);
