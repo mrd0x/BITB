@@ -1,0 +1,122 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+nav{
+    height: 68px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.links{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+nav img{
+    height: 82px;
+}
+nav a{
+    margin-right: -40px;
+    font-size: 10px;
+    color: rgb(24,143,255);
+}
+h1{
+    font-size: 20px;
+}
+.left p{
+    font-size: 14px;
+}
+.left{
+    width: 40vw;
+    margin-top: 50px;
+}
+.everything{
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 430px;
+    width: 300px;
+    margin: 7px 5px 0 10px ;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.card img{
+    height: 60px;
+    margin-bottom: 25px;
+}
+.card p{
+    font-size: 12px;
+    margin-bottom: 60px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 20px;
+    background-color: white;
+    width: 100vw;
+    margin: 0px 0 0 0;
+    font-size: 8px;
+    gap: 2px;
+}
+h2{
+    font-size: 16px;
+}
+.mail-box{
+    margin-bottom: 6px;
+    border: none;
+    width: 250px;
+}
+::placeholder{
+    font-size: 12px;
+}
+hr{
+    margin-bottom: 20px;
+    width: 240px;
+}
+.next{
+    width:250px;
+    height: 35px;
+    border: none;
+    background-color: rgb(24,143,255);
+    border-radius: 50px;
+    color: white;
+    margin-bottom: 18px;
+}
+.link-line{
+    display: flex;
+    align-items: center;
+    width: 250px;
+    gap: 7px;
+    margin-bottom: 70px;
+}
+.link-line a{
+    font-size: 12px;
+    color: rgb(24,143,255);
+}
+.sign{
+    margin-right: 40px;
+}
+.create{
+    width:250px;
+    height: 35px;
+    border: 1px solid rgb(24,143,255);
+    background-color: white;
+    border-radius: 50px;
+    color: rgb(24,143,255);
+    font-weight: bold;
+}

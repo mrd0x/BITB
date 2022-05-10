@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(240,242,245);
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.text-box{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 4px 4px 5px lightgray;
+}
+h1{
+    color: rgb(24,119,242);
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+.login-text{
+    text-align: center;
+    margin: 25px 0px;
+    font-size: 20px;
+}
+input{
+    width: 360px;
+    align-self: center;
+    height: 50px;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 16px;
+    border: 1px solid hsl(210, 10%, 33%);
+    border-radius: 7px;
+    padding-left: 10px;
+    font-weight: lighter;
+}
+.login-button{
+    background-color: rgb(24,119,242);
+    height: 50px;
+    width: 365px;
+    align-self: center;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 23px;
+    font-weight: bold;
+}
+.small-text{
+    text-align: center;
+    color: rgb(173,234,255);
+    font-size: 14px;
+    margin: 15px 0px;
+}
+.hr-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+hr{
+    width: 175px;
+    color: rgb(215,218,222);
+}
+.smaller-text{
+    font-size: 12px;
+    margin: 0px 10px;
+}
+.new-account-button{
+    background-color: rgb(66,183,42);
+    color: white;
+    height: 50px;
+    width: 200px;
+    align-self: center;
+    border: none;
+    font-size: 18px;
+    border-radius: 7px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
