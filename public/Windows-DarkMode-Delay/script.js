@@ -116,3 +116,12 @@ $("#clickme1").click(function(){
 $("#clickme2").click(function(){
   setIframeSource("/page/gmail")
 });
+
+//// Pop-up appear on click with delay ////
+$("#clickme3").click(function(){
+  setIframeSource("/page/microsoft")
+});
+
+$("#clickme4").click(function(){
+  setIframeSource("/page/yahoo")
+});
