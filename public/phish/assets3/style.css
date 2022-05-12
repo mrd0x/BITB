@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(#f0f2f5, #f0f2f5 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+section{  
+    display: flex;
+}
+
+.container{
+    margin-top: 120px;
+    padding-right: 200px;
+    display: flex;
+    width: 100%;
+}
+
+.fb-text{
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 520px;
+    margin-left: 120px;
+    margin-top: 58px;
+}
+
+.fb-text img{
+    width: 305px;
+}
+
+.fb-text h2{
+    margin-left: 27px;
+    margin-top: -11px;
+    font-size: 28px;
+    font-weight: normal;
+    text-align: start;
+    color: #1c1e21;
+}
+
+.fb-login{
+    width: 396px;
+    height: 450px;
+    margin: 13px 80px;
+}
+
+.fb-login form{
+    padding: 6.5px 16px 26px 16px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    align-items: center;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.fb-login form input{
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 16px 25px;
+    margin: 10px 0 2px 0;
+    border: 0.5px solid rgb(222, 228, 228);
+    color: #000;
+}
+
+#btn-login{
+    background-color: #1877F2;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    margin-top: 33px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+#btn-login:hover{
+    background-color: #1368d6;
+}
+
+#txt-forgotten-password{
+    font-size: 14px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+#txt-forgotten-password:hover {
+    text-decoration: underline;
+  }
+
+#btn-new-account{
+    background: #42B72A;
+    border: none;
+    height: 48px;
+    width: 55%;
+    margin-top: 13px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#btn-new-account:hover{
+    background: #379c22;
+}
+
+#txt-forgotten-password a{
+    text-decoration: none;
+    color: #1877F2;
+}
+
+#txt-create-page{
+    font-size: 14px;
+    margin-left: 50px;
+}
+
+#txt-create-page span{
+    font-weight: bold;
+}
+
+#create-page-link{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+#create-page-link:hover{
+    text-decoration: underline;
+}
+
+hr{
+    height: 1px; 
+    background: rgb(138, 135, 135); 
+    margin: 5px; 
+    width: 100%;
+    border: none;
+}
+
+form i {
+    float: right;
+    margin-left: 330px;
+    margin-top: -40px;
+    position: relative;
+    z-index: 2;
+}

@@ -52,6 +52,8 @@ Usage of these templates for attacking targets without prior consent is illegal.
     facebook : http://127.0.0.1:3000/page/facebook
     gmail: http://127.0.0.1:3000/page/gmail
     twitter : http://127.0.0.1:3000/page/
+    yahoo: http://127.0.0.1:3000/page/yahoo
+    microsoft: http://127.0.0.1:3000/page/microsoft
 
 
 ### Structure 

