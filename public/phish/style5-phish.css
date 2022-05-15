@@ -7,49 +7,27 @@
 body{
     background-color: whitesmoke;
 }
-nav{
-    height: 68px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-}
-.links{
-    display: flex;
-    align-items: center;
-    width: 80%;
-    justify-content: space-between;
-    margin: 0 30px;
-}
-nav img{
-    height: 82px;
-}
-nav a{
-    margin-right: -40px;
-    font-size: 10px;
-    color: rgb(24,143,255);
-}
+
 h1{
     font-size: 20px;
-}
-.left p{
-    font-size: 14px;
-}
-.left{
-    width: 40vw;
-    margin-top: 50px;
 }
 .everything{
     display: flex;
     justify-content: center;
-    width: auto;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    max-width: 400px;
+    margin: 0 auto;
 }
 .card{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: white;
-    height: 430px;
-    width: 300px;
+    height: 70vh;
+    width: 100%;
     margin: 7px 5px 0 10px ;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -77,17 +55,17 @@ h2{
     font-size: 16px;
 }
 .mail-box{
-    margin-bottom: 6px;
-    border: none;
     width: 250px;
+    height: 2.5rem;
+    border: none;
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 1.5rem;
+    outline: none;
 }
 ::placeholder{
     font-size: 12px;
 }
-hr{
-    margin-bottom: 20px;
-    width: 240px;
-}
+
 .next{
     width:250px;
     height: 35px;
