@@ -16,12 +16,24 @@ section{
 }
 
 .container{
-    margin-top: 120px;
+    width: 100%;
+    margin-top: 20px;
     padding-right: 200px;
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+@media  screen and (min-width: 800px) {
+    .container{
+        margin-top: 120px;
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
 .fb-text{
     font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
     font-size: 28px;
@@ -39,12 +51,18 @@ section{
 .fb-text h2{
     margin-left: 27px;
     margin-top: -11px;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: normal;
     text-align: start;
     color: #1c1e21;
 }
+@media  screen and (min-width: 800px) {
+    .fb-text h2{
+        font-size: 28px;
+        text-align: start;
 
+    }
+}
 .fb-login{
     width: 396px;
     height: 450px;
@@ -152,3 +170,4 @@ form i {
     position: relative;
     z-index: 2;
 }
+

