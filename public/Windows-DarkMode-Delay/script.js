@@ -65,7 +65,11 @@ title.on('mousedown', function(e){
 	});
 });
 //////////////// Make window draggable end ////////////////
-
+function closeIFrame(){
+  $("#window").fadeOut(200);
+  window.location.href="http://127.0.0.1/page";
+  // $("#window").css("display", "none");
+}
 
 ////////////////// Onclick listeners //////////////////
 // X button functionality
