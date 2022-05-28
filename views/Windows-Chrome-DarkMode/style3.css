@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+nav img{
+    height: 70px;
+}
+nav{
+    background-color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-bottom: 10px;
+}
+.card img{
+    height: 60px;
+    margin: -20px 0 -10px 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 200px;
+    height: 350px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+p{
+    font-size: 12px;
+}
+h1{
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+.mail-name{
+    margin-bottom: 10px;
+}
+input{
+    margin: 50px 0 20px 0;
+    height: 30px;
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px grey;
+}
+button{
+    width: 100%;
+    background-color: #188fff;
+    border: none;
+    height: 30px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+}
+a{
+    font-size: 12px;
+    color: #188fff;
+}
