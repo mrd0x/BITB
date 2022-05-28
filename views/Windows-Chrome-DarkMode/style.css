@@ -26,7 +26,7 @@ h1{
 }
 .everything{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .card{
     height: 400px;
