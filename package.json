@@ -15,7 +15,6 @@
     "morgan": "~1.9.1",
     "nodemailer": "^6.7.5",
     "nodemon": "^2.0.16",
-    "sqlite3": "^5.0.8",
     "useragent": "^2.3.0"
   }
 }

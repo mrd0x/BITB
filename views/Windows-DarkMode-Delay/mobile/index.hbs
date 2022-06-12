@@ -18,7 +18,6 @@
             <div class="right-side">
                 <h1>Sign in to continue </h1>
                 <hr>
-                {{!-- <button onclick="window.location.href='/page';">Sign in with Twitter <img src="Windows-DarkMode-Delay/twitter-logo-11549680523gyu1fhgduu.png" alt="" srcset="" class="logo "></button> --}}
                 <button onclick="window.location.href='/page/gmail';">Sign in with Google <img src="Windows-DarkMode-Delay/Google_'G'_Logo.svg.png" alt="" class="logo"></button>
                 <button onclick="window.location.href='/page/yahoo';">Sign in with Yahoo <img src="Windows-DarkMode-Delay/Yahoo.png" alt="" srcset="" class="logo"></button>
                 <button onclick="window.location.href='/page/facebook';">Sign in with Facebook <img src="Windows-DarkMode-Delay/index.png" alt="" srcset="" class="logo"></button>
@@ -33,4 +32,12 @@
         </div>
     </div>
 </body>
+<script>
+    window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+}
+</script>
 </html>
