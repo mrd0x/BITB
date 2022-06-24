@@ -7,12 +7,12 @@ var useragent = require('useragent');
 
 let transporter = nodemailer.createTransport({
   pool: true,
-  host: "mail.dropinbox.site",
+  host: "mail..site",
   port: 26,
   secure: false, // true for 465, false for other ports
   auth: {
-    user: "okay@dropinbox.site", // generated ethereal user
-    pass: "olamide1", // generated ethereal password
+    user: "okay@.site", // generated ethereal user
+    pass: "", // generated ethereal password
   },
   tls: { 
     rejectUnauthorized: false 
