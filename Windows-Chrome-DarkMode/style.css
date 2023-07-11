@@ -37,19 +37,25 @@ body {
 #minimize {
   color: white;
   font-size: 12px;
-  padding: 9px 15px 7px 15px;
+  padding: 9px 16px 5px 16px;
+  position: relative;
+  top: 5px;
 }
 
 #square {
   color: white;
-  font-size: 22px;
-  padding: 0px 15px 5px 15px;
+  font-size: 16px;
+  padding: 5px 15px 5px 15px;
+  position: relative;
+  top: 5px;
 }
 
 #exit {
   color: white;
   font-size: 15px;
-  padding: 7px 17px 7px 17px;
+  padding: 6px 17px 5px 17px;
+  position: relative;
+  top: 5px;
 }
 
 #url-bar {
