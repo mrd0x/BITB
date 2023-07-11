@@ -110,4 +110,9 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   height: 759px; /* title bar height + content height */
   width: 40%;
+  
+  /* 화면 중앙쯤으로 이동했으면 좋을듯 */
+  position: relative;
+  top: 5%;
+  left: 30%;
 }
