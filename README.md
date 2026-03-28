@@ -1,4 +1,6 @@
 # BITB
+
+[![gitcgr](https://gitcgr.com/badge/mrd0x/BITB.svg)](https://gitcgr.com/mrd0x/BITB)
 Browser templates for Browser In The Browser (BITB) attack.
 
 More information: https://mrd0x.com/browser-in-the-browser-phishing-attack/ 
